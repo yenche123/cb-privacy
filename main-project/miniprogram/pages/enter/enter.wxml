@@ -1,0 +1,24 @@
+<!--miniprogram/pages/enter/enter.wxml-->
+
+<view class="enter-container">
+
+  <view class="ec-1">
+    <text>欢迎进入崔晏哲的毕业设计</text>
+  </view>
+
+  <view class="ec-2">
+    <text>课题：边缘计算架构下基于区块链技术的隐私保护方案</text>
+  </view>
+
+  <view class="ec-2">
+    <text>指导老师：龙承念 教授</text>
+  </view>
+
+</view>
+
+<view class="enter-btn-container">
+  <view class="enter-btn" hover-class="enter-btn_hover">
+    <text>进入</text>
+    <button class="yx-virtual-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo" />
+  </view>
+</view>

@@ -1,0 +1,65 @@
+/**index.wxss**/
+
+.index-container{
+  width: 750rpx;
+  height: 900rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-input{
+  font-size: 56rpx;
+  width: 560rpx;
+  margin-bottom: 120rpx;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.index-input_ph{
+  color: #a0a0a0;
+}
+
+.index-time{
+  margin-bottom: 28rpx;
+  font-size: 30rpx;
+  color: #a0a0a0;
+}
+
+.index-btn-container{
+  position: fixed;
+  bottom: 20rpx;
+  left: 0;
+  right: 0;
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-btn{
+  font-size: 32rpx;
+  display: flex;
+  width: 500rpx;
+  height: 90rpx;
+  margin-bottom: 30rpx;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 5px rgba(0,0,0,.1);
+  background: linear-gradient(15deg, #7abd63, #29ae59);
+  border-radius: 7rpx;
+  color: white;
+  opacity: 1;
+  transition: .1s;
+}
+
+.index-btn_disabled{
+  opacity: .7;
+}
+
+.index-btn_hover{
+  opacity: .6;
+}

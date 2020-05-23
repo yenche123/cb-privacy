@@ -1,0 +1,97 @@
+/* miniprogram/pages/user/user.wxss */
+
+
+.user-container{
+  width: 750rpx;
+  height: 1000rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user_input{
+  font-size: 52rpx;
+  height: 60rpx;
+  font-weight: 700;
+  margin-bottom: 30rpx;
+  margin-left: 30rpx;
+  width: 690rpx;
+  color: #393939;
+  text-align: center;
+}
+
+.user_input_ph{
+  color: #909090;
+}
+
+.user-status{
+  margin: 30rpx;
+  width: 690rpx;
+  height: 300rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #848484;
+  text-align: center;
+}
+
+
+.enter-btn-container{
+  position: fixed;
+  bottom: 60rpx;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.enter-btn{
+  position: relative;
+  width: 610rpx;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6rpx;
+  box-shadow: 0 3px 5px rgba(0,0,0,.1);
+  background: linear-gradient(20deg, #ffc436, #ffde37 80%);
+  color: #1f1f1f;
+  font-size: 33rpx;
+}
+
+.enter-btn_disabled{
+  opacity: .7;
+}
+
+.enter-btn_hover{
+  opacity: .66;
+}
+
+/** 状态栏 */
+.status-box{
+  width: 690rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.status-bar {
+  display: flex;
+  margin-bottom: 30rpx;
+}
+
+.status-hd{
+  min-width: 150rpx;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  color: #393939;
+}
+
+.status-bd{
+  max-width: 500rpx;
+  font-size: 30rpx;
+  color: #666;
+  text-align: left;
+}

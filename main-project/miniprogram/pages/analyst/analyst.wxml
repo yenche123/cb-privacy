@@ -1,0 +1,19 @@
+<!--miniprogram/pages/analyst/analyst.wxml-->
+
+
+<view class="analyst-container">
+  <input class="analysis-title_input" placeholder="请输入分析标题" bindinput="onInput" data-input-type="title" placeholder-class="analysis_input_ph" bindblur="onBlur"/>
+  <input class="analysis-desc_input" placeholder="请输入分析描述" bindinput="onInput" data-input-type="desc" placeholder-class="analysis_input_ph" bindblur="onBlur" />
+  <view class="analyst-status">
+    <text>{{statusTip}}</text>
+  </view>
+</view>
+
+<view class="enter-btn-container">
+  <view class="enter-btn {{status !== 0 ? 'enter-btn_disabled' : ''}}" hover-class="enter-btn_hover" catchtap="onTapStep1">
+    <text>发起数据分析</text>
+  </view>
+  <view class="enter-btn enter-btn_2" hover-class="enter-btn_hover" catchtap="onTapEdgeServer">
+    <text>触发EdgeServer</text>
+  </view>
+</view>

@@ -1,0 +1,53 @@
+<!--miniprogram/pages/user/user.wxml-->
+
+<view class="user-container">
+  <input class="user_input" placeholder="请输入一个数字" bindinput="onInputAndBlur" data-input-type="title" placeholder-class="user_input_ph" bindblur="onInputAndBlur" disabled="{{inputDisabled}}" type="number" maxlength="2" />
+  <view class="user-status">
+    <text hidden="{{analystID}}">{{statusTip}}</text>
+    <view class="status-box" hidden="{{!analystID}}">
+
+      <view class="status-bar">
+        <view class="status-hd">
+          <text>分析标题: </text>
+        </view>
+        <view class="status-bd">
+          <text>{{title}}</text>
+        </view>
+      </view>
+
+      <view class="status-bar">
+        <view class="status-hd">
+          <text>分析描述: </text>
+        </view>
+        <view class="status-bd">
+          <text>{{desc}}</text>
+        </view>
+      </view>
+
+      <view class="status-bar">
+        <view class="status-hd">
+          <text>分析者ID: </text>
+        </view>
+        <view class="status-bd">
+          <text>{{analystID}}</text>
+        </view>
+      </view>
+
+      <view class="status-bar">
+        <view class="status-hd">
+          <text>机构/公司: </text>
+        </view>
+        <view class="status-bd">
+          <text>{{company}}</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>
+
+<view class="enter-btn-container">
+  <view class="enter-btn {{status !== 1 ? 'enter-btn_disabled' : ''}}" hover-class="enter-btn_hover" catchtap="onSubmit">
+    <text>{{btnText}}</text>
+  </view>
+</view>

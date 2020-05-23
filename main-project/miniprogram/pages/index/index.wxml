@@ -1,0 +1,39 @@
+<view class="index-container">
+  <input wx:if="{{true}}" placeholder="请输入数字" class="index-input" type="number" maxlength="2" disabled="{{locked}}" bindinput="onInput" />
+
+  <view class="index-time" style="margin-bottom: 50rpx;" wx:if="{{time1}}">
+    <text>针对{{bitNum}}位的密钥</text>
+  </view>
+
+  <view class="index-time" wx:if="{{time1}}">
+    <text>第一次加密耗时: </text>
+    <text>{{time1}}</text>
+  </view>
+  <view class="index-time" wx:if="{{time2}}">
+    <text>第二次加密耗时: </text>
+    <text>{{time2}}</text>
+  </view>
+  <view class="index-time" wx:if="{{time3}}">
+    <text>第三次加密耗时: </text>
+    <text>{{time3}}</text>
+  </view>
+  <view class="index-time" wx:if="{{time4}}">
+    <text>第四次加密耗时: </text>
+    <text>{{time4}}</text>
+  </view>
+  <view class="index-time" wx:if="{{time5}}">
+    <text>第五次加密耗时: </text>
+    <text>{{time5}}</text>
+  </view>
+</view>
+
+<view class="index-btn-container">
+  <view wx:if="{{true}}" class="index-btn {{locked ? 'index-btn_disabled' : ''}}" hover-class="index-btn_hover" catchtap="onTapKeyGen">
+    <text>{{bitNum}} KeyGen</text>
+  </view>
+
+  <view class="index-btn {{locked ? 'index-btn_disabled' : ''}}" hover-class="index-btn_hover" catchtap="onTapEncrypt">Encrypt</view>
+
+  <button wx:if="{{false}}" style="width: 500rpx;background: white;" catchtap="onTapCloud">调用云函数</button>
+
+</view>

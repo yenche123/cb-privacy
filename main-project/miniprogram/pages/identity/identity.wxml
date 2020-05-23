@@ -1,0 +1,7 @@
+<!--miniprogram/pages/identity/identity.wxml-->
+
+
+<view class="identity-container">
+  <button class="identity-btn" catchtap="onTapAnalyst">数据分析者</button>
+  <button class="identity-btn" style="margin-bottom: 0;" catchtap="onTapUser">终端用户</button>
+</view>

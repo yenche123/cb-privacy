@@ -1,0 +1,10 @@
+/* miniprogram/pages/test-one/test-one.wxss */
+
+.index-container{
+  width: 750rpx;
+  height: 1000rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

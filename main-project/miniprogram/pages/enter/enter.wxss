@@ -1,0 +1,53 @@
+/* miniprogram/pages/enter/enter.wxss */
+
+.enter-container{
+  width: 750rpx;
+  height: 1000rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ec-1{
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #393939;
+  margin-bottom: 50rpx;
+}
+
+.ec-2{
+  font-size: 25rpx;
+  color: #868686;
+  margin-bottom: 24rpx;
+}
+
+.enter-btn-container{
+  position: fixed;
+  bottom: 60rpx;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.enter-btn{
+  position: relative;
+  width: 610rpx;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6rpx;
+  box-shadow: 0 3px 5px rgba(0,0,0,.1);
+  background: linear-gradient(20deg, #ffc436, #ffde37 80%);
+  color: #393939;
+  font-size: 33rpx;
+}
+
+.enter-btn_hover{
+  opacity: .66;
+}

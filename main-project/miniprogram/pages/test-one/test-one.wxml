@@ -1,0 +1,10 @@
+<!--miniprogram/pages/test-one/test-one.wxml-->
+<view class="index-container">
+  <input placeholder="请输入数字" class="index-input" type="number" maxlength="2" disabled="{{locked}}" bindinput="onInput" />
+  
+</view>
+
+<view class="index-btn-container">
+  <view class="index-btn {{locked ? 'index-btn_hover' : ''}}" hover-class="index-btn_hover" catchtap="onTapKeyGen">确定</view>
+
+</view>
