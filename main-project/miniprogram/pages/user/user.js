@@ -49,8 +49,8 @@ Page({
 
   showillegal() {
     wx.showToast({
-      title: '',
-      icon: "不合规的输入",
+      title: '不合规的输入',
+      icon: "none",
     })
   },
 
