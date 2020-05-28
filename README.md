@@ -53,19 +53,19 @@ p.s. 注意上图的目录 `D:\research` 只是示例，请选择你中你本地
 
 - 首先，打开小程序，点击`进入`
 
-<img src="./docs/images/进入页.jpg">
+<img src="./docs/images/进入页.jpg" width="256" />
 
 <br/>
 
 - 接着点击`数据分析者`，输入分析标题和详情
 
-<img src="./docs/images/数据分析页.jpg">
+<img src="./docs/images/数据分析页.jpg" width="256" />
 
 <br />
 
 - 回到身份选择页，选择`终端用户`，输入一个数字；输入完，退出到选择页再进入，接着再输入一个数字，如此反复.....
 
-<img src="./docs/images/终端1.jpg">
+<img src="./docs/images/终端1.jpg" width="256" />
 
 - 最后再回到数据分析者页，`触发EdgeServer`，观察结果。
 
