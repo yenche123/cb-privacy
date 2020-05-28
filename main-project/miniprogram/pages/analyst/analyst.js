@@ -209,10 +209,14 @@ Page({
       if(res4Result.isOk) {
         this.setData({ statusTip: "完成数据分析创建", status: 4})
       }
+      else {
+        this.setData({statusTip: "被拒绝的token", status: 0})
+      }
     }
     catch(e) {
       console.log("goStep4 出现错误")
       console.log(err)
+      this.setData({statusTip: "在step 4 出现错误", status: 0})
     }
   },
 
