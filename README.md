@@ -112,7 +112,7 @@ p.s. 注意上图的目录 `D:\research` 只是示例，请选择你中你本地
 
 若对以上有任何疑问，欢迎提issue，或联系 yenche123@sjtu.edu.cn，感谢你的支持！
 
-<img src="docs/images/appreciate.png" alt="谢谢你~" style="zoom:33%;" />
+<img src="docs/images/appreciate.png" alt="谢谢你~" width="256" />
 
 
 

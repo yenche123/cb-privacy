@@ -50,7 +50,7 @@ Page({
   showillegal() {
     wx.showToast({
       title: '不合规的输入',
-      icon: "none", //哈哈哈
+      icon: "none",
     })
   },
 
