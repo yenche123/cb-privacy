@@ -92,7 +92,7 @@ exports.main = async (event, context) => {
       console.log(isLegalData)
 
       if (!isLegalData[0]) {
-        return { isOk, isLegalData, cyzMsg: "判为不合法的 preAnalysisToken"}
+        return { isOk: false, isLegalData, cyzMsg: "判为不合法的 preAnalysisToken"}
       }
 
       let { publicKey, privateKey } = paillier.generateRandomKeys(512)
