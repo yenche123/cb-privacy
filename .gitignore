@@ -1,1 +1,5 @@
-node_modules
+# for Node.js
+node_modules/
+
+# for MAC
+.DS_Store
