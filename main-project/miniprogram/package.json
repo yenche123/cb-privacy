@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "big-integer": "^1.6.48",
-    "ethers": "^4.0.47"
+    "big-integer": "^1.6.48"
   }
 }

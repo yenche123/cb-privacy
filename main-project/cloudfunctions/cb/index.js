@@ -39,15 +39,12 @@ exports.main = async (event, context) => {
   }
 
   
-
   try {
-
     let ctr = new Controller()
     
     const db = cloud.database()
     const _ = db.command
 
-    
     if (operation === 1) {
       //总步骤1 发布交易
 
@@ -134,8 +131,8 @@ exports.main = async (event, context) => {
     else if(operation === 5) {
       //入参 analysis_no enSum
       let { enSumValue, actualN} = event
-      if(!enSumValue) return {cyzMsg: "没有enSumValue"}
-      if(!actualN) return {cyzMsg: "没有actualN"}
+      if(!enSumValue) return {cyzMsg: "没有enSumValue", isOk: false}
+      if(!actualN) return {cyzMsg: "没有actualN", isOk: false}
 
       console.log("analysis_no: ", analysis_no)
       console.log("actualN: ", actualN)
@@ -150,8 +147,6 @@ exports.main = async (event, context) => {
       if(d5List.length < 1) {
         return {cyzMsg: "没有该记录", isOk: false}
       }
-
-      console.log("看一下 d5List", d5List)
 
       let d5 = d5List[0] || {}
       let _id = d5._id || ""
@@ -169,8 +164,7 @@ exports.main = async (event, context) => {
       Q.value = tmpSk._q.value
       LAMBDA.value = tmpSk.lambda.value
       MU.value = tmpSk.mu.value
-      console.log("到这里有问题吗~")
-      console.log(" ")
+
       let pk = new paillier.PublicKey(N, G)
       let sk = new paillier.PrivateKey(LAMBDA, MU, P, Q, pk)
 
@@ -178,7 +172,6 @@ exports.main = async (event, context) => {
       encrypedSum.value = [...enSumValue]
 
       let sum = sk.decrypt(encrypedSum)
-      console.log("会哭吗！！！", sum)
       let res_p = sum / actualN
       res_p = String(res_p)
       let a6 = await db.collection("Analysis").doc(_id).update({

@@ -69,7 +69,7 @@ Page({
 
     const db = wx.cloud.database()
     const _ = db.command
-    const ago = 1000 * 60 * 60 * 9 //取9小时内的
+    const ago = 1000 * 60 * 60 * 9 //取9小时内的，自己决定要取多久内有效的数据
 
 
     var run = () => {
@@ -130,21 +130,10 @@ Page({
     console.log("暂时的公钥：", tmpPk)
     
     if(tmpPk) {
-      //构造两个大数 再把value替换掉
-      // let N = bigInt("11 1231111 1111111 1411511")
-  
+
       let N = arrToBigInt([...tmpPk.n.value], tmpPk.n.sign)
       let G = arrToBigInt([...tmpPk.g.value], tmpPk.g.sign)
       
-      // Object.assign(N, {value: [...tmpPk.n.value]})
-      // Object.assign(G, {value: [...tmpPk.g.value]})
-      
-      console.log("N: ")
-      console.log(N)
-      console.log("G: ")
-      console.log(G)
-
-
       const pk = new paillier.PublicKey(N, G)
       console.log("看一下生成的公钥：")
       console.log(pk)
