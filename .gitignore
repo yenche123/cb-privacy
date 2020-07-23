@@ -3,3 +3,5 @@ node_modules/
 
 # for MAC
 .DS_Store
+
+.vs

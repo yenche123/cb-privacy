@@ -1,22 +1,36 @@
 # cb-privacy
 一个基于区块链+同态加密+小程序的隐私保护方案
 
+<br/>
+
+***写在前面***
+
+> 设想一个场景，你有好多智能设备（终端设备），比如你的手机、air-pods、平版、小米手环......，你使用它们的过程中，它也不断的在产生数据，这些数据是有价值的，设备的制造商或应用开发商想获取它们，然而它通常却是隐私的，这可怎么办呢？
+
+这就是本文（本项目）欲尝试解决的问题。
+
+<br />
+
+### :tired_face: 理论
+
+详见项目根目录的论文。欢迎下载。
+
+<br/>
+
 ### :tada: 开发
 
 - 在本地创建一个存放projects的文件夹，比如projects，在该文件夹下右键，点击`Git bash here`
 - 输入 `git clone https://github.com/yenche123/cb-privacy.git ` 安装好后projects下会出现 `cb-privacy` 文件夹。
 
 
-
-### :file_folder: cb-privacy下 各文件夹解释
+#### :file_folder: cb-privacy下 各文件夹解释
 
 `contracts`: 存放智能合约
 
 `main-project`: 主要目录，终端层、数据分析者（外包）以及边缘服务器层的代码皆在其中。
 
 
-
-### :file_folder: main-project 下 文件夹解释
+#### :file_folder: main-project 下 文件夹解释
 
 `cloudfunctions`: 云函数根目录，其下每个文件夹对应一个云函数。其中`cb` 为中枢区块链的代理，`edgeServer` 模拟边缘服务器，`getOpenId` 为获取身份标识用的云函数。
 
@@ -24,7 +38,7 @@
 
 `project.config.json`: 小程序项目配置文件
 
-
+<br/>
 
 ### :hammer: main-project 的部署
 
@@ -48,6 +62,7 @@ p.s. 注意上图的目录 `D:\research` 只是示例，请选择你中你本地
 - 在终端打开 cb-privacy/main-project/miniprogram ，`npm install big-integer@1.6.48` 在终端层上安装大数模块。安装好后，点击 小程序开发者工具 顶部标签 `工具` ，再点击 `构建 npm`，即把npm模块转成小程序客户端可运行的格式。转换完毕后，miniprogram 文件夹下即会出现 `miniprogram_npm` 文件夹，这里存放转成完成的代码。
 - 至此，即完成配置
 
+<br/>
 
 ### :smirk: 如何使用
 
@@ -76,6 +91,11 @@ p.s. 注意上图的目录 `D:\research` 只是示例，请选择你中你本地
 
 以下步骤为智能合约开发及部署的流程，若只是简单上手本方案，可忽略。
 
+<br/>
+
+--- 
+
+<br/>
 
 ### :pencil: 开发智能合约
 
@@ -129,25 +149,16 @@ p.s. 注意上图的目录 `D:\research` 只是示例，请选择你中你本地
 
 13. 将该地址复制到 cb云函数下的 Controller.js 文件中的 u变量里。之后，调用智能合约时，即会通过该地址进行连接。
 
+<br/>
 
+--- 
+
+<br/>
 
 ### :phone: 联系
 
 若对以上有任何疑问，欢迎提issue，或联系 yenche123@sjtu.edu.cn，感谢你的支持！
 
 <img src="docs/images/appreciate.png" alt="谢谢你~" width="256" />
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
