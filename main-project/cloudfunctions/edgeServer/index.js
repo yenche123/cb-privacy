@@ -3,7 +3,9 @@ const cloud = require('wx-server-sdk')
 const bigInt = require('big-integer');
 const paillier = require('./paillier.js');
 
-cloud.init()
+cloud.init({
+  env: cloud.DYNAMIC_CURRENT_ENV,
+})
 
 // 云函数入口函数
 exports.main = async (event, context) => {
