@@ -5,7 +5,9 @@ var Controller = require("./Controller.js")
 const paillier = require('paillier.js')
 const bigInt = require('big-integer');
 
-cloud.init()
+cloud.init({
+  env: cloud.DYNAMIC_CURRENT_ENV,
+})
 
 
 var configNonce = async (ctr1) => {
