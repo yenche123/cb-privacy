@@ -54,13 +54,14 @@ p.s. 注意上图的目录 `D:\research` 只是示例，请选择你中你本地
 
 <img src="docs/images/screenshot-2.png" alt="开通云开发" style="zoom:50%;" />
 
-- 打开 `cloudfunctions/cb`文件夹里，打开终端命令行，分次输入 `npm install big-integer@1.6.48` 、`npm install ethereumjs-tx@2.1.2` 、`npm install web3@0.20.6` 以及 `npm install web3-eth-abi` 。@之后的版本号，代表安装特定版本，这些版本皆已通过测试，若为其他（或最新）版本，不保证兼容。完成后，在小程序开发者工具里，找到cloudfunctions/cb 目录，在该目录上右键，点击`上传并部署：云端安装依赖（不上传node modules），如此即可同步云函数至云上。
+- 在 `main-project` 目录里，定位到 `cloudfunctions/cb` 路径上，此时在终端命令行内分次输入 `npm install big-integer@1.6.48` 、`npm install ethereumjs-tx@2.1.2` 、`npm install web3@0.20.6` 以及 `npm install web3-eth-abi`，以完成 `cb` 云函数的依赖安装。@之后的版本号，代表安装特定版本，这些版本皆已通过测试，若为其他（或最新）版本，不保证兼容。完成后，在小程序开发者工具里，找到 `cloudfunctions/cb` 目录，在该目录上右键，点击`上传并部署：云端安装依赖（不上传node modules），如此即可同步云函数至云上。
 
 ![上传云函数](docs/images/screenshot-3.png)
 
-- 同理，对`edgeServer` 云函数安装  `npm install big-integer@1.6.48` ，安装完也同样`上传并部署：于端安装依赖`
-- 在终端打开 cb-privacy/main-project/miniprogram ，`npm install big-integer@1.6.48` 在终端层上安装大数模块。安装好后，点击 小程序开发者工具 顶部标签 `工具` ，再点击 `构建 npm`，即把npm模块转成小程序客户端可运行的格式。转换完毕后，miniprogram 文件夹下即会出现 `miniprogram_npm` 文件夹，这里存放转成完成的代码。
-- 至此，即完成配置
+- 同理，对`edgeServer` 云函数安装  `npm install big-integer@1.6.48` ，安装完也同样 `上传并部署：于端安装依赖`
+- 再同理，对 `getOpenid` 云函数点击 `上传并部署：于端安装依赖`（它没有依赖需要安装）
+- 在终端打开 cb-privacy/main-project/miniprogram ，`npm install big-integer@1.6.48` 在终端层上安装大数模块。安装好后，点击 小程序开发者工具 顶部标签 `工具` ，再点击 `构建 npm`，即把 npm 模块转成小程序客户端可运行的格式。转换完毕后，`miniprogram` 文件夹下即会出现 `miniprogram_npm` 文件夹，这里用于存放转换完成后的代码。
+- 至此，即完成配置。
 
 <br/>
 
